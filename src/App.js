@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import TicTacTue from './Components/TicTacTue';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='bg-slate-900 h-screen w-screen select-none'>
+        <div className='flex justify-center items-center mx-auto w-full'>
+          <TicTacTue />
+        </div>
+      </div>
+    </>
   );
 }
 
