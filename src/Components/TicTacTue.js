@@ -58,11 +58,9 @@ const TicTacTue = () => {
                     setXPlaying(false);
                     setScore({ ...score, o })
                 }
-                setTimeout(() => {
-                    setWinner(board[x]);
                     showPopup(true)
+                    setWinner(board[x]);
                     restartGame();
-                }, 500)
             }
         }
     }
